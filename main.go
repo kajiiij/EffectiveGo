@@ -78,6 +78,12 @@ func main() {
 	fmt.Println(len(s2))
 	fmt.Println(cap(s2))
 
+	// mapのメモリ確保を高速化する
+	m := make(map[string]string, 1000)
+	fmt.Println(m)
+	fmt.Println(len(m))
+	// 最適化は計測してから行うべき。という言葉がある。
+	// コードを変更する前には必ず計測すべき。と覚えよう。
 }
 
 var (
